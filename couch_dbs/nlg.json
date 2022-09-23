@@ -1,0 +1,48 @@
+[
+    {
+        "match": "request(prep_chicken)",
+        "utterance": "wash two chicken thighs and place them in a large pot with enough water to cover them"
+    },
+    {
+        "match": "request(cook_chicken)",
+        "utterance": "add allspice, bay leaf, salt, and black pepper and cook on medium-high heat"
+    },
+    {
+        "match": "request(peel_vegetables)",
+        "utterance": "while the chicken is cooking, peel and cut two carrots, two parsnips, a chunk of celery, some leek and onion"
+    },
+    {
+        "match": "request(singe_onion)",
+        "utterance": "heat up the sliced onion on a dry pan until it gets singed"
+    },
+    {
+        "match": "request(add_vegetables)",
+        "utterance": "once the meat is somewhat cooked, add all the vegetables and cook until soft"
+    },
+    {
+        "match": "request(serve_chicken)",
+        "utterance": "serve the soup hot, you can add some pasta or fresh parsley to garnish"
+    },
+
+
+    {
+        "match": "request(prep_meat)",
+        "utterance": "wash a chunk of pork with bone and place in a large pot with enough water to cover it"
+    },
+    {
+        "match": "request(cook_meat)",
+        "utterance": "add allspice, bay leaf, salt, black pepper, and some dried mushrooms and cook on medium-high heat"
+    },
+    {
+        "match": "request(add_barley)",
+        "utterance": "add some crushed barley and cook until soft"
+    },
+    {
+        "match": "request(peel_meat)",
+        "utterance": "take out the meat, separate it from bone, divide into smaller pieces and add back into the soup"
+    },
+    {
+        "match": "request(serve_barley)",
+        "utterance": "serve the soup hot, with a dollop of sour cream and, optionally, some fresh parsley and bread"
+    }
+]

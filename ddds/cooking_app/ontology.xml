@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ontology name="CookingAppOntology">
+
+<action name="chicken_soup"/>
+<action name="barley_soup"/>
+
+<predicate name="finished_cooking" sort="finished_action"/>
+<predicate name="current_recipe" sort="recipe"/>
+
+<sort name="finished_action" dynamic="false"/>
+<sort name="recipe" dynamic="false"/>
+
+<individual name="ch_soup" sort="finished_action"/>
+<individual name="b_soup" sort="finished_action"/>
+
+<individual name="barley_recipe" sort="recipe"/>
+<individual name="chicken_recipe" sort="recipe"/>
+
+
+</ontology>

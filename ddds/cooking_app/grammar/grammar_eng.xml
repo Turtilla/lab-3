@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar>
+
+  <action name="top">
+    <one-of>
+      <item>main menu</item>
+      <item>top</item>
+      <item>beginning</item>
+      <item>cancel</item>
+      <item>forget it</item>
+      <item>never mind</item>
+      <item>abort</item>
+    </one-of>
+  </action>
+
+  <action name="up">
+    <one-of>
+      <item>up</item>
+      <item>back</item>
+      <item>go back</item>
+    </one-of>
+  </action>
+
+  <individual name="ch_soup">
+    <one-of>
+      <item>congrats! you have finished preparing chicken soup. enjoy!</item>
+    </one-of>
+  </individual>
+
+  <individual name="b_soup">
+    <one-of>
+      <item>good job! you have finished preparing barley soup. enjoy!</item>
+    </one-of>
+  </individual>
+
+  <individual name="barley_recipe">
+    <one-of>
+      <item>barley soup</item>
+    </one-of>
+  </individual>
+
+  <individual name="chicken_recipe">
+    <one-of>
+      <item>chicken soup</item>
+    </one-of>
+  </individual>
+
+</grammar>

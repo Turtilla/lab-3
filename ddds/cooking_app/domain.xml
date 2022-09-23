@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<domain name="CookingAppDomain" is_super_domain="true">
+  <goal type="perform" action="top">
+    <plan>
+      <forget_all/>
+      <findout type="alt_question">
+        <alt>
+          <perform action="chicken_soup"/>
+        </alt>
+        <alt>
+          <perform action="barley_soup"/>
+        </alt>
+      </findout>
+    </plan>
+  </goal>
+
+  <goal type="perform" action="chicken_soup">
+    <plan>
+      <get_done action="prep_chicken"/>
+      <get_done action="cook_chicken"/>
+      <get_done action="peel_vegetables"/>
+      <get_done action="singe_onion"/>
+      <get_done action="add_vegetables"/>
+      <get_done action="serve_chicken"/>
+      <inform>
+        <proposition predicate="finished_cooking" value="ch_soup"/>
+      </inform>
+    </plan>
+  </goal>
+
+  <goal type="perform" action="barley_soup">
+    <plan>
+      <get_done action="prep_meat"/>
+      <get_done action="cook_meat"/>
+      <get_done action="peel_vegetables"/>
+      <get_done action="add_vegetables"/>
+      <get_done action="add_barley"/>
+      <get_done action="peel_meat"/>
+      <get_done action="serve_barley"/>
+      <inform>
+        <proposition predicate="finished_cooking" value="b_soup"/>
+      </inform>
+    </plan>
+  </goal>
+
+</domain>
