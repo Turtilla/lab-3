@@ -23,8 +23,6 @@
         "match": "request(serve_chicken)",
         "utterance": "serve the soup hot, you can add some pasta or fresh parsley to garnish"
     },
-
-
     {
         "match": "request(prep_meat)",
         "utterance": "wash a chunk of pork with bone and place in a large pot with enough water to cover it"

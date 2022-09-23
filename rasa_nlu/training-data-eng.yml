@@ -17,17 +17,17 @@ nlu:
 
 - intent: answer
   examples: |
-    - [barley soup]{"entity": "sort.recipe", "value": "individual.barley_recipe"}
-    - [chicken soup]{"entity": "sort.recipe", "value": "individual.chicken_recipe"}
+    - [b soup]{"entity": "sort.recipe", "value": "individual.barley_recipe"}
+    - [c soup]{"entity": "sort.recipe", "value": "individual.chicken_recipe"}
     - [congrats! you have finished preparing chicken soup. enjoy!]{"entity": "sort.finished_action", "value": "individual.ch_soup"}
     - [good job! you have finished preparing barley soup. enjoy!]{"entity": "sort.finished_action", "value": "individual.b_soup"}
-    - yes [barley soup]{"entity": "sort.recipe", "value": "individual.barley_recipe"}
-    - no [chicken soup]{"entity": "sort.recipe", "value": "individual.chicken_recipe"}
+    - yes [b soup]{"entity": "sort.recipe", "value": "individual.barley_recipe"}
+    - no [c soup]{"entity": "sort.recipe", "value": "individual.chicken_recipe"}
 
 - intent: answer_negation
   examples: |
-    - not [barley soup]{"entity": "sort.recipe", "value": "individual.barley_recipe"}
-    - not [chicken soup]{"entity": "sort.recipe", "value": "individual.chicken_recipe"}
+    - not [b soup]{"entity": "sort.recipe", "value": "individual.barley_recipe"}
+    - not [c soup]{"entity": "sort.recipe", "value": "individual.chicken_recipe"}
     - not [congrats! you have finished preparing chicken soup. enjoy!]{"entity": "sort.finished_action", "value": "individual.ch_soup"}
     - not [good job! you have finished preparing barley soup. enjoy!]{"entity": "sort.finished_action", "value": "individual.b_soup"}
 
