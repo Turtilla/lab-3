@@ -21,6 +21,27 @@
     </one-of>
   </action>
 
+  <action name="chicken_soup">
+  <one-of>
+      <item>chicken soup</item>
+      <item>i want to know how to make chicken soup</item>
+      <item>tell me how to make chicken soup</item>
+      <item>how do i make chicken soup</item>
+      
+    </one-of>
+  </action>
+
+  <action name="barley_soup">
+  <one-of>
+      <item>barley soup</item>
+      <item>i want to know how to make barley soup</item>
+      <item>tell me how to make barley soup</item>
+      <item>how do i make barley soup</item>
+      
+    </one-of>
+  </action>
+
+
   <individual name="ch_soup">
     <one-of>
       <item>congrats! you have finished preparing chicken soup. enjoy!</item>
@@ -35,13 +56,13 @@
 
   <individual name="barley_recipe">
     <one-of>
-      <item>barley soup</item>
+      <item>b soup</item>
     </one-of>
   </individual>
 
   <individual name="chicken_recipe">
     <one-of>
-      <item>chicken soup</item>
+      <item>c soup</item>
     </one-of>
   </individual>
 
