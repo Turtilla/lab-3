@@ -23,6 +23,7 @@
 
   <action name="chicken_soup">
   <one-of>
+      <item>make chicken soup</item>
       <item>chicken soup</item>
       <item>i want to know how to make chicken soup</item>
       <item>tell me how to make chicken soup</item>
@@ -33,6 +34,7 @@
 
   <action name="barley_soup">
   <one-of>
+      <item>make barley soup</item>
       <item>barley soup</item>
       <item>i want to know how to make barley soup</item>
       <item>tell me how to make barley soup</item>
@@ -41,6 +43,47 @@
     </one-of>
   </action>
 
+  <question speaker="user" predicate="cutting_style" type="wh_question">
+    <one-of>
+      <item>how do I cut them</item>
+      <item>how do I cut the vegetables</item>
+      <item>how should I cut them</item>
+      <item>how should I cut the vegetables</item>
+      <item>how do I cut them for this soup</item>
+      <item>how do I cut the vegetables for this soup</item>
+      <item>how should I cut them for this soup</item>
+      <item>how should I cut the vegetables for this soup</item>
+    </one-of>
+  </question>
+
+  <question speaker="user" predicate="cooking_time" type="wh_question">
+    <one-of>
+      <item>how long do I cook it</item>
+      <item>how long do I cook it for</item>
+      <item>how long do I cook the meat</item>
+      <item>how long do I cook the meat for</item>
+      <item>how long does it take</item>
+      <item>how long does it take to cook it</item>
+      <item>how long does it take to cook the meat</item>
+    </one-of>
+  </question>
+
+  <question speaker="user" predicate="barley_amount" type="wh_question">
+    <one-of>
+      <item>how much of it</item>
+      <item>how much of barley</item>
+      <item>how much do I add</item>
+      <item>how much barley do I add</item>
+      <item>how much of it do I add</item>
+      <item>how much should I add</item>
+      <item>how much barley should I add</item>
+      <item>how much of it should I add</item>
+    </one-of>
+  </question>
+
+  <question speaker="system" predicate="current_recipe" type="wh_question">
+    for which recipe is that
+  </question>
 
   <individual name="ch_soup">
     <one-of>
@@ -56,13 +99,49 @@
 
   <individual name="barley_recipe">
     <one-of>
-      <item>b soup</item>
+      <item>the second recipe</item>
     </one-of>
   </individual>
 
   <individual name="chicken_recipe">
     <one-of>
-      <item>c soup</item>
+      <item>the first recipe</item>
+    </one-of>
+  </individual>
+
+  <individual name="big_chunks">
+    <one-of>
+      <item>you should cut them in big chunks</item>
+    </one-of>
+  </individual>
+
+  <individual name="small_chunks">
+    <one-of>
+      <item>you should cut them in small chunks or dice them</item>
+    </one-of>
+  </individual>
+
+  <individual name="chicken_time">
+    <one-of>
+      <item>you should cook the chicken thighs for about half an hour, but you can continue with the next few steps while the meat is cooking</item>
+    </one-of>
+  </individual>
+
+  <individual name="barley_time">
+    <one-of>
+      <item>you should cook the pork for about 45 minutes, but you can continue with the next few steps while the meat is cooking</item>
+    </one-of>
+  </individual>
+
+  <individual name="chicken_barley">
+    <one-of>
+      <item>you should not add barley to this soup at all</item>
+    </one-of>
+  </individual>
+
+  <individual name="barley_barley">
+    <one-of>
+      <item>you should add around 80g barley, but if you like the soup thicker, you can add more</item>
     </one-of>
   </individual>
 

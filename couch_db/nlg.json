@@ -1,46 +1,66 @@
 [
     {
+        "match": "greet",
+        "utterance": "Welcome to cook-a-soup, today I will help you to cook the soup of your dreams."
+    },
+    {
         "match": "request(prep_chicken)",
-        "utterance": "wash two chicken thighs and place them in a large pot with enough water to cover them"
+        "utterance": "Wash two chicken thighs and place them in a large pot with enough water to cover them."
     },
     {
         "match": "request(cook_chicken)",
-        "utterance": "add allspice, bay leaf, salt, and black pepper and cook on medium-high heat"
+        "utterance": "Add allspice, bay leaf, salt, and black pepper and cook on medium-high heat."
     },
     {
         "match": "request(peel_vegetables)",
-        "utterance": "while the chicken is cooking, peel and cut two carrots, two parsnips, a chunk of celery, some leek and onion"
+        "utterance": "While the chicken is cooking, peel and cut two carrots, two parsnips, a chunk of celery, some leek and onion."
     },
     {
         "match": "request(singe_onion)",
-        "utterance": "heat up the sliced onion on a dry pan until it gets singed"
+        "utterance": "Heat up the sliced onion on a dry pan until it gets singed."
     },
     {
         "match": "request(add_vegetables)",
-        "utterance": "once the meat is somewhat cooked, add all the vegetables and cook until soft"
+        "utterance": "Once the meat is somewhat cooked, add all the vegetables and cook until soft."
     },
     {
         "match": "request(serve_chicken)",
-        "utterance": "serve the soup hot, you can add some pasta or fresh parsley to garnish"
+        "utterance": "Serve the soup hot, you can add some pasta or fresh parsley to garnish."
     },
     {
         "match": "request(prep_meat)",
-        "utterance": "wash a chunk of pork with bone and place in a large pot with enough water to cover it"
+        "utterance": "Wash a chunk of pork with bone and place in a large pot with enough water to cover it."
     },
     {
         "match": "request(cook_meat)",
-        "utterance": "add allspice, bay leaf, salt, black pepper, and some dried mushrooms and cook on medium-high heat"
+        "utterance": "Add allspice, bay leaf, salt, black pepper, and some dried mushrooms and cook on medium-high heat."
     },
     {
         "match": "request(add_barley)",
-        "utterance": "add some crushed barley and cook until soft"
+        "utterance": "Add some crushed barley and cook until soft."
     },
     {
         "match": "request(peel_meat)",
-        "utterance": "take out the meat, separate it from bone, divide into smaller pieces and add back into the soup"
+        "utterance": "Take out the meat, separate it from bone, divide into smaller pieces and add back into the soup."
     },
     {
         "match": "request(serve_barley)",
-        "utterance": "serve the soup hot, with a dollop of sour cream and, optionally, some fresh parsley and bread"
+        "utterance": "Serve the soup hot, with a dollop of sour cream and, optionally, some fresh parsley and bread."
+    },
+    {
+        "match": "request(prep_meat_details)",
+        "utterance": "You should rinse the meat under cold, running water and place it in a large pot. Then, slowly fill the pot with cold water until no part of the meat sticks out over the water's surface."
+    },
+    {
+        "match": "request(peel_vegetables_details)",
+        "utterance": "Make sure to use a small knife or a peeler and remove the outer layer of the root vegetables. Rinse them along with the leek. Cut off the top and the bottom of the onion and remove the dried up layers. Cut all the vegetables."
+    },
+    {
+        "match": "request(singe_onion_details)",
+        "utterance": "Warm up a frying pan without any oil or liquid. Spread out the onion slices. Check every once in a while to see if the side of the slices facing the pan is turning black. If so, flip and repeat the process. Once both sides are singed, take the frying pan off of the heat."
+    },
+    {
+        "match": "request(peel_meat_details)",
+        "utterance": "Take out the chunk of meat and put it in a deeper dish. Wait a moment for it to cool off. Use a fork or your fingers, and a knife, if necessary, to separate the cooked meat from the bone. Remove any parts you don't like, such as connective tissue, skin, or fat. Once the meat is separated, add it back to the soup and stir."
     }
 ]

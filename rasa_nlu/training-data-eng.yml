@@ -3,6 +3,7 @@ version: "2.0"
 nlu:
 - intent: action::barley_soup
   examples: |
+    - make barley soup
     - barley soup
     - i want to know how to make barley soup
     - tell me how to make barley soup
@@ -10,24 +11,69 @@ nlu:
 
 - intent: action::chicken_soup
   examples: |
+    - make chicken soup
     - chicken soup
     - i want to know how to make chicken soup
     - tell me how to make chicken soup
     - how do i make chicken soup
 
+- intent: question::cutting_style
+  examples: |
+    - how do I cut them
+    - how do I cut the vegetables
+    - how should I cut them
+    - how should I cut the vegetables
+    - how do I cut them for this soup
+    - how do I cut the vegetables for this soup
+    - how should I cut them for this soup
+    - how should I cut the vegetables for this soup
+
+- intent: question::cooking_time
+  examples: |
+    - how long do I cook it
+    - how long do I cook it for
+    - how long do I cook the meat
+    - how long do I cook the meat for
+    - how long does it take
+    - how long does it take to cook it
+    - how long does it take to cook the meat
+
+- intent: question::barley_amount
+  examples: |
+    - how much of it
+    - how much of barley
+    - how much do I add
+    - how much barley do I add
+    - how much of it do I add
+    - how much should I add
+    - how much barley should I add
+    - how much of it should I add
+
 - intent: answer
   examples: |
-    - [b soup]{"entity": "sort.recipe", "value": "individual.barley_recipe"}
-    - [c soup]{"entity": "sort.recipe", "value": "individual.chicken_recipe"}
+    - [you should not add barley to this soup at all]{"entity": "sort.amount", "value": "individual.chicken_barley"}
+    - [you should add around 80g barley, but if you like the soup thicker, you can add more]{"entity": "sort.amount", "value": "individual.barley_barley"}
+    - [you should cook the chicken thighs for about half an hour, but you can continue with the next few steps while the meat is cooking]{"entity": "sort.time", "value": "individual.chicken_time"}
+    - [you should cook the pork for about 45 minutes, but you can continue with the next few steps while the meat is cooking]{"entity": "sort.time", "value": "individual.barley_time"}
+    - [the second recipe]{"entity": "sort.recipe", "value": "individual.barley_recipe"}
+    - [the first recipe]{"entity": "sort.recipe", "value": "individual.chicken_recipe"}
+    - [you should cut them in big chunks]{"entity": "sort.cutting", "value": "individual.big_chunks"}
+    - [you should cut them in small chunks or dice them]{"entity": "sort.cutting", "value": "individual.small_chunks"}
     - [congrats! you have finished preparing chicken soup. enjoy!]{"entity": "sort.finished_action", "value": "individual.ch_soup"}
     - [good job! you have finished preparing barley soup. enjoy!]{"entity": "sort.finished_action", "value": "individual.b_soup"}
-    - yes [b soup]{"entity": "sort.recipe", "value": "individual.barley_recipe"}
-    - no [c soup]{"entity": "sort.recipe", "value": "individual.chicken_recipe"}
+    - yes [you should not add barley to this soup at all]{"entity": "sort.amount", "value": "individual.chicken_barley"}
+    - no [you should add around 80g barley, but if you like the soup thicker, you can add more]{"entity": "sort.amount", "value": "individual.barley_barley"}
 
 - intent: answer_negation
   examples: |
-    - not [b soup]{"entity": "sort.recipe", "value": "individual.barley_recipe"}
-    - not [c soup]{"entity": "sort.recipe", "value": "individual.chicken_recipe"}
+    - not [you should not add barley to this soup at all]{"entity": "sort.amount", "value": "individual.chicken_barley"}
+    - not [you should add around 80g barley, but if you like the soup thicker, you can add more]{"entity": "sort.amount", "value": "individual.barley_barley"}
+    - not [you should cook the chicken thighs for about half an hour, but you can continue with the next few steps while the meat is cooking]{"entity": "sort.time", "value": "individual.chicken_time"}
+    - not [you should cook the pork for about 45 minutes, but you can continue with the next few steps while the meat is cooking]{"entity": "sort.time", "value": "individual.barley_time"}
+    - not [the second recipe]{"entity": "sort.recipe", "value": "individual.barley_recipe"}
+    - not [the first recipe]{"entity": "sort.recipe", "value": "individual.chicken_recipe"}
+    - not [you should cut them in big chunks]{"entity": "sort.cutting", "value": "individual.big_chunks"}
+    - not [you should cut them in small chunks or dice them]{"entity": "sort.cutting", "value": "individual.small_chunks"}
     - not [congrats! you have finished preparing chicken soup. enjoy!]{"entity": "sort.finished_action", "value": "individual.ch_soup"}
     - not [good job! you have finished preparing barley soup. enjoy!]{"entity": "sort.finished_action", "value": "individual.b_soup"}
 

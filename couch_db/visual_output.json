@@ -1,31 +1,31 @@
 [
     {
-        "semantic_expression": "some(semantic_expression_of_a_move)",
+        "semantic_expression": "request(singe_onion)",
         "visual_information": [
             {
                 "attribute": "name",
                 "type": "text/plain",
-                "value": "Some text to show if the image cannot be shown"
+                "value": "Two singed pieces of onion on a frying pan."
             },
             {
                 "attribute": "image",
                 "type": "image/jpeg",
-                "value": "https://some-image-url"
+                "value": "https://inductionlove.com/wp-content/uploads/2020/08/20170105_101946.jpg"
             }
         ]
     },
     {
-        "semantic_expression": "another(semantic_expression_of_a_move)",
+        "semantic_expression": "request(add_barley)",
         "visual_information": [
             {
                 "attribute": "name",
                 "type": "text/plain",
-                "value": "Another text to show if the image cannot be shown"
+                "value": "Barley on a wooden spoon."
             },
             {
                 "attribute": "image",
                 "type": "image/jpeg",
-                "value": "https://another-image-url"
+                "value": "https://www.wiecejnizzdrowie.pl/wp-content/uploads/bigstock-Barley-Groats-On-Wooden-Spoon-sierpniowka.jpg"
             }
         ]
     }

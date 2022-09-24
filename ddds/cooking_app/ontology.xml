@@ -3,12 +3,23 @@
 
 <action name="chicken_soup"/>
 <action name="barley_soup"/>
+<action name="prep_chicken"/>
+<action name="prep_meat"/>
+<action name="peel_vegetables"/>
+<action name="singe_onion"/>
+<action name="peel_meat"/>
 
 <predicate name="finished_cooking" sort="finished_action"/>
 <predicate name="current_recipe" sort="recipe"/>
+<predicate name="cutting_style" sort="cutting"/>
+<predicate name="cooking_time" sort="time"/>
+<predicate name="barley_amount" sort="amount"/>
 
 <sort name="finished_action" dynamic="false"/>
 <sort name="recipe" dynamic="false"/>
+<sort name="cutting" dynamic="false"/>
+<sort name="time" dynamic="false"/>
+<sort name="amount" dynamic="false"/>
 
 <individual name="ch_soup" sort="finished_action"/>
 <individual name="b_soup" sort="finished_action"/>
@@ -16,5 +27,13 @@
 <individual name="barley_recipe" sort="recipe"/>
 <individual name="chicken_recipe" sort="recipe"/>
 
+<individual name="big_chunks" sort="cutting"/>
+<individual name="small_chunks" sort="cutting"/>
+
+<individual name="chicken_time" sort="time"/>
+<individual name="barley_time" sort="time"/>
+
+<individual name="chicken_barley" sort="amount"/>
+<individual name="barley_barley" sort="amount"/>
 
 </ontology>

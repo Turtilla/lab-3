@@ -16,20 +16,28 @@
 
   <goal type="perform" action="chicken_soup">
     <plan>
+      <assume_shared>
+        <proposition predicate="current_recipe" value="chicken_recipe"/>
+      </assume_shared>
       <get_done action="prep_chicken"/>
       <get_done action="cook_chicken"/>
       <get_done action="peel_vegetables"/>
       <get_done action="singe_onion"/>
       <get_done action="add_vegetables"/>
+      <get_done action="peel_meat"/>
       <get_done action="serve_chicken"/>
       <inform>
         <proposition predicate="finished_cooking" value="ch_soup"/>
       </inform>
+      <signal_action_completion/>
     </plan>
   </goal>
 
   <goal type="perform" action="barley_soup">
     <plan>
+      <assume_shared>
+        <proposition predicate="current_recipe" value="barley_recipe"/>
+      </assume_shared>
       <get_done action="prep_meat"/>
       <get_done action="cook_meat"/>
       <get_done action="peel_vegetables"/>
@@ -40,6 +48,99 @@
       <inform>
         <proposition predicate="finished_cooking" value="b_soup"/>
       </inform>
+      <signal_action_completion/>
+    </plan>
+  </goal>
+
+  <goal type="perform" action="prep_chicken">
+    <plan>
+      <get_done action="prep_meat_details"/>
+      <signal_action_completion/>
+    </plan>
+  </goal>
+
+  <goal type="perform" action="prep_meat">
+    <plan>
+      <get_done action="prep_meat_details"/>
+      <signal_action_completion/>
+    </plan>
+  </goal>
+
+  <goal type="perform" action="peel_vegetables">
+    <plan>
+      <get_done action="peel_vegetables_details"/>
+      <signal_action_completion/>
+    </plan>
+  </goal>
+  
+  <goal type="perform" action="singe_onion">
+    <plan>
+      <get_done action="singe_onion_details"/>
+      <signal_action_completion/>
+    </plan>
+  </goal>
+
+  <goal type="perform" action="peel_meat">
+    <plan>
+      <get_done action="peel_meat_details"/>
+      <signal_action_completion/>
+    </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="cutting_style">
+    <plan>
+      <findout type="wh_question" predicate="current_recipe"/>
+      <if>
+        <is_private_belief_or_shared_commitment predicate="current_recipe" value="chicken_recipe"/>
+        <then>
+          <inform>
+            <proposition predicate="cutting_style" value="big_chunks"/>
+          </inform>
+        </then>
+        <else>
+          <inform>
+            <proposition predicate="cutting_style" value="small_chunks"/>
+          </inform>
+        </else>
+      </if>
+    </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="cooking_time">
+    <plan>
+      <findout type="wh_question" predicate="current_recipe"/>
+      <if>
+        <is_private_belief_or_shared_commitment predicate="current_recipe" value="chicken_recipe"/>
+        <then>
+          <inform>
+            <proposition predicate="cooking_time" value="chicken_time"/>
+          </inform>
+        </then>
+        <else>
+          <inform>
+            <proposition predicate="cooking_time" value="barley_time"/>
+          </inform>
+        </else>
+      </if>
+    </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="barley_amount">
+    <plan>
+      <findout type="wh_question" predicate="current_recipe"/>
+      <if>
+        <is_private_belief_or_shared_commitment predicate="current_recipe" value="chicken_recipe"/>
+        <then>
+          <inform>
+            <proposition predicate="barley_amount" value="chicken_barley"/>
+          </inform>
+        </then>
+        <else>
+          <inform>
+            <proposition predicate="barley_amount" value="barley_barley"/>
+          </inform>
+        </else>
+      </if>
     </plan>
   </goal>
 
