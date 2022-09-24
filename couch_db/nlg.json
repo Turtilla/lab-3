@@ -62,5 +62,9 @@
     {
         "match": "request(peel_meat_details)",
         "utterance": "Take out the chunk of meat and put it in a deeper dish. Wait a moment for it to cool off. Use a fork or your fingers, and a knife, if necessary, to separate the cooked meat from the bone. Remove any parts you don't like, such as connective tissue, skin, or fat. Once the meat is separated, add it back to the soup and stir."
+    },
+    {
+        "match": "report(action_status(prep_meat, done))",
+        "utterance": "Okay."
     }
 ]
