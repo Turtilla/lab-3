@@ -65,6 +65,22 @@
     },
     {
         "match": "report(action_status(prep_meat, done))",
-        "utterance": "Okay."
+        "utterance": "Okay!"
+    },
+    {
+        "match": "report(action_status(prep_chicken, done))",
+        "utterance": "Okay!"
+    },
+    {
+        "match": "report(action_status(peel_vegetables, done))",
+        "utterance": "Nice job!"
+    },
+    {
+        "match": "report(action_status(singe_onion, done))",
+        "utterance": "Gotcha!"
+    },
+    {
+        "match": "report(action_status(peel_meat, done))",
+        "utterance": "Okay!"
     }
 ]
